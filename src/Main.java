@@ -36,24 +36,40 @@ public class Main {
                 br = new BufferedReader(new FileReader(fileOneName));
                 String line;
                 while ((line = br.readLine()) != null) {
+                    boolean contains2 = line.contains(" ");
+                    if (contains2){
+                        continue;
+                    }
                     counterLineOneFile++;
                 }
                 int[] mass1 = new int[counterLineOneFile];
                 br.close();
                 br = new BufferedReader(new FileReader(fileOneName));
                 while ((line = br.readLine()) != null) {
+                    boolean contains2 = line.contains(" ");
+                    if (contains2){
+                        continue;
+                    }
                     mass1[i] = Integer.parseInt(line);
                     i++;
                 }
                 br.close();
                 br = new BufferedReader(new FileReader(fileTwoName));
                 while ((line = br.readLine()) != null) {
+                    boolean contains2 = line.contains(" ");
+                    if (contains2){
+                        continue;
+                    }
                     counterLineOneFile1++;
                 }
                 int[] mass2 = new int[counterLineOneFile1];
                 br.close();
                 br = new BufferedReader(new FileReader(fileTwoName));
                 while ((line = br.readLine()) != null) {
+                    boolean contains2 = line.contains(" ");
+                    if (contains2){
+                        continue;
+                    }
                     mass2[j] = Integer.parseInt(line);
                     j++;
                 }
